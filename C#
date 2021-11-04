@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace proje1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+			Random rndm = new Random();
+
+			int[] dizi = new int[12];
+
+			for (int i = 0; i < 12; i++)
+			{
+				dizi[i] = rndm.Next(0, 100);
+				Console.WriteLine(dizi[i]);
+			}
+
+			//soru 3
+			//Dizinin ilk indis degeri ile son indis degerini takas eden kısım
+			/* int temp;
+			temp = dizi[0];
+			dizi[0] = dizi[11];
+			dizi[11] = temp;
+			Console.WriteLine("dizinin ilk indis degeri: "+ dizi[0]);
+			Console.WriteLine("dizinin sonuncu indis degeri: "+ dizi[11]); */
+
+			Console.ReadKey();
+		}
+    }
+}
+/* belirli indislerin yerini degistirmek
+using System;
+
+class Program {
+    static void Main(string[] args) {
+       
+		int[] dizi;
+		dizi = new int[10];
+		for(int i=0; i<10; i++){
+			Console.Write(i +".indis degeri: ", i);
+			dizi[i] = Convert.ToInt32(Console.ReadLine());
+			
+		}
+		Console.Write("\n" + "degisicek indisler: ");
+		int eleman1 = Convert.ToInt32(Console.ReadLine());
+		int eleman2 = Convert.ToInt32(Console.ReadLine());
+
+		Swap(eleman1, eleman2, dizi);
+		Console.ReadKey();
+    }
+	private static void Swap( int eleman1, int eleman2, int[] dizi){
+		int temp;
+		temp = dizi[eleman1];
+		dizi[eleman1] = dizi[eleman2];
+		dizi[eleman2] = temp;
+
+		for(int i=0;i<10;i++){
+				Console.Write("\n" + i +". deger: "+dizi[i] + " ");
+				
+		}
+	}
+
+} */
