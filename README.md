@@ -1,1 +1,1 @@
-# C- C# dilinde yazdığım örnek bazı kodlar.
+# C#- C# dilinde yazdığım örnek bazı kodlar.
